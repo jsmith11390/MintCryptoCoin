@@ -2,16 +2,16 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #00ff00; /* green text color */
-    background-color: #000; /* black background color */
-    background-image: url('https://wallpaperaccess.com/full/1519117.jpg'); /* Background image URL */
+    color: #000; /* Change font color to black */
+    background-color: #000; /* Keep background color black */
+    background-image: url('https://wallpaperaccess.com/full/1519117.jpg'); /* Keep the background image */
     background-size: cover;
     background-position: center;
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background for header */
-    color: #00ff00;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
     text-align: center;
     padding: 20px 0;
 }
@@ -29,16 +29,16 @@ section {
 }
 
 h2 {
-    color: #00ff00;
+    color: #fff; /* Change heading color to white */
 }
 
 p {
-    color: #00ff00;
+    color: #fff; /* Change paragraph text color to white */
 }
 
 footer {
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background for footer */
-    color: #00ff00;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
     text-align: center;
     padding: 10px 0;
 }
