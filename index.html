@@ -4,32 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MintCoinCrypto</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
     <header>
         <h1>MintCoinCrypto</h1>
     </header>
+    
     <main>
+        <section id="abstract">
+            <h2>Abstract</h2>
+            <!-- Abstract content here -->
+        </section>
+        
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <!-- Introduction content here -->
+        </section>
+
         <section id="about">
             <h2>About MintCoinCrypto</h2>
-            <p>MintCoinCrypto is a burn token on the Ethereum blockchain with a total supply of 10 billion.</p>
+            <!-- About MintCoin content here -->
         </section>
-        <section id="wallet">
-            <h2>Integrated Wallet</h2>
-            <p>An integrated wallet feature for MintCoinCrypto is coming soon.</p>
-        </section>
+
+        <!-- Add other sections/content here -->
+
+        <!-- Connect Wallet button -->
+        <button onclick="connectWallet()">Connect Wallet with MetaMask</button>
     </main>
-<section id="ticker">
-    <h2>Cryptocurrency Ticker</h2>
-    <ul>
-        <li><strong>ETH:</strong> $3,500</li>
-        <li><strong>BTC:</strong> $40,000</li>
-        <li><strong>XRP:</strong> $1.50</li>
-    </ul>
-</section>
+    
     <footer>
         <p>&copy; 2024 MintCoinCrypto. All rights reserved.</p>
     </footer>
+
+    <!-- JavaScript function to connect to MetaMask -->
+    <script>
+        async function connectWallet() {
+            if (window.ethereum) {
+                try {
+                    // Request account access
+                    await window.ethereum.request({ method: 'eth_requestAccounts' });
+                    console.log('Connected to MetaMask');
+                    // Optionally, you can perform additional actions after connecting
+                } catch (error) {
+                    console.error(error);
+                }
+            } else {
+                console.error('MetaMask extension not detected');
+                // Optionally, you can provide instructions to install MetaMask
+            }
+        }
+    </script>
 </body>
 </html>
