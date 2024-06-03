@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MintCoinCrypto</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        /* CSS for black font */
+        body {
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MintCoinCrypto</h1>
+    </header>
+    
+    <main>
+        <section id="mintcoincrypto">
+            <h2>MintCoinCrypto</h2>
+            <p>The MintCoin project aims to introduce a novel decentralized cryptocurrency, built on the Ethereum blockchain, designed to address the shortcomings of traditional digital currencies and provide a more efficient, secure, and sustainable alternative.</p>
+        </section>
+        
+        <!-- Introduction section -->
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <h3>Background</h3>
+            <p>In recent years, the proliferation of cryptocurrencies has led to increased interest in digital assets as a means of value exchange. However, existing cryptocurrencies face several challenges, including scalability issues, environmental concerns, and centralization risks.</p>
+            <h3>Purpose</h3>
+            <p>MintCoin seeks to address these challenges by leveraging the Ethereum blockchain to create a decentralized and deflationary cryptocurrency that offers fast, secure, and environmentally friendly transactions.</p>
+        </section>
+
+        <!-- Technology Overview section -->
+        <section id="technology">
+            <h2>Technology Overview</h2>
+            <h3>Ethereum Blockchain</h3>
+            <p>MintCoin is built on the Ethereum blockchain, utilizing its smart contract functionality to enable secure and transparent transactions. By leveraging Ethereum's robust infrastructure, MintCoin ensures reliability and interoperability within the broader blockchain ecosystem.</p>
+            <h3>Deflationary Mechanism</h3>
+            <p>MintCoin implements a deflationary mechanism, where a percentage of each transaction is burned, reducing the total supply of tokens over time. This scarcity model is designed to increase the value of MintCoin and incentivize long-term holding.</p>
+        </section>
+
+        <!-- Features section -->
+        <section id="features">
+            <h2>Features</h2>
+            <h3>Integrated Wallet</h3>
+            <p>MintCoin will soon introduce an integrated wallet feature, providing users with a convenient and secure way to store, manage, and transact with MintCoin tokens. The wallet will support multiple cryptocurrencies, allowing for seamless cross-chain transactions.</p>
+            <h3>Cross-Platform Compatibility</h3>
+            <p>MintCoin is designed to be compatible with various platforms and devices, including desktop computers, mobile devices, and web browsers. This ensures accessibility and usability for a wide range of users worldwide.</p>
+        </section>
+
+        <!-- Tokenomics section -->
+        <section id="tokenomics">
+            <h2>Tokenomics</h2>
+            <h3>Total Supply</h3>
+            <p>MintCoin has a fixed total supply of 10 billion tokens, ensuring scarcity and value preservation over time.</p>
+            <h3>Distribution</h3>
+            <p>The initial distribution of MintCoin tokens will be conducted through a fair and transparent process, with opportunities for community participation and engagement.</p>
+        </section>
+
+        <!-- Roadmap section -->
+        <section id="roadmap">
+            <h2>Roadmap</h2>
+            <h3>Development Milestones</h3>
+            <p>The MintCoin project will follow a comprehensive roadmap, outlining key milestones and development phases. This includes the implementation of additional features, such as decentralized governance and cross-chain interoperability.</p>
+        </section>
+
+        <!-- Connect Wallet button -->
+        <button onclick="connectWallet()">Connect Wallet with MetaMask</button>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 MintCoinCrypto. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript function to connect to MetaMask -->
+    <script>
+        async function connectWallet() {
+            if (window.ethereum) {
+                try {
+                    // Request account access
+                    await window.ethereum.request({ method: 'eth_requestAccounts' });
+                    console.log('Connected to MetaMask');
+                    // Optionally, you can perform additional actions after connecting
+                } catch (error) {
+                    console.error(error);
+                }
+            } else {
+                console.error('MetaMask extension not detected');
+                // Optionally, you can provide instructions to install MetaMask
+            }
+        }
+    </script>
+</body>
+</html>
